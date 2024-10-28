@@ -3,7 +3,7 @@ import { useContacts } from '../../hooks/useContacts';
 import { useDispatch } from 'react-redux';
 import { ErrorMessage, Field, Form, Formik } from 'formik';
 import * as Yup from 'yup';
-import { addContact } from '../../redux/contacts/contactsSlice';
+import { addContact } from '../../redux/contacts/contactsOps';
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 
@@ -22,10 +22,10 @@ const ContactSchema = Yup.object().shape({
     .required('Required'),
   number: Yup.string()
     .matches(
-      /[0-9]{3}-[0-9]{2}-[0-9]{2}/,
-      'Number must be in format <123-45-67>'
+      /[0-9]{3}-[0-9]{3}-[0-9]{4}/,
+      'Number must be in format <123-456-7890>'
     )
-    .max(9, 'Too Long!')
+    .max(12, 'Too Long!')
     .required('Required'),
 });
 
