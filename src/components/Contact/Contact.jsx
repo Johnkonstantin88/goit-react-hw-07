@@ -1,6 +1,6 @@
 import { useDispatch } from 'react-redux';
 import { useContacts } from '../../hooks';
-import { deleteContact } from '../../redux/contacts/contactsOps';
+import { deleteContact } from '../../redux/contactsOps';
 
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';

@@ -5,7 +5,7 @@ import ContactForm from './ContactForm/ContactForm';
 import SearchBox from './SearchBox/SearchBox';
 import ContactList from './ContactList/ContactList';
 import { useContacts } from '../hooks';
-import { contactsOps } from '../redux/contacts';
+import { contactsOps } from '../redux';
 import css from './App.module.css';
 import Loader from './Loader/Loader';
 

@@ -3,7 +3,7 @@ import { useContacts } from '../../hooks/useContacts';
 import { useDispatch } from 'react-redux';
 import { ErrorMessage, Field, Form, Formik } from 'formik';
 import * as Yup from 'yup';
-import { addContact } from '../../redux/contacts/contactsOps';
+import { addContact } from '../../redux/contactsOps';
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 
